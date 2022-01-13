@@ -21,6 +21,9 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -42,10 +45,6 @@
     <!--Filter-->
     <section class="filter">
       <div class="grid">
-        <div class="div">
-          <label for="buscar"><span><i class="bx bx-search"></i></span></label>
-          <input type="text" id="buscar" placeholder="Buscar relojes...">
-        </div>
         <div class="category">
           <select id="category" onclick="categoryValue()">
             <option value="">Marcas</option>
@@ -91,7 +90,7 @@
           <div class="bottom">
             <div class="btn__group">
               <a href="#" class="btn addToCart">Añadir carrito</a>
-              <a href="producto-detalles.html" class="btn view">Vista</a>
+              <a href="producto-detalles.html" class="btn view">Detalle</a>
             </div>
           </div>
         </div> -->
@@ -137,8 +136,8 @@
 
         <div class="carrito__footer">
             <h3>Total: $ <span class="carrito__total">0</span></h3>
-            <button class="clear__carrito btn">Remover carrito</button>
-            <button class="clear__carrito btn">Comprar</button>
+            <button class="clear__carrito btn" id="fadeOut">Remover carrito</button>
+            <button class="clear__carrito btn" id="fadeOut">Comprar</button>
         </div>
       </div>
     </section>
@@ -159,6 +158,7 @@
     </footer>
 
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/animaciones.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
